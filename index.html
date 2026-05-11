@@ -128,7 +128,7 @@ body{
 }
 
 .hero-text{
-    font-size:1.2rem;
+    font-size:1.15rem;
     line-height:1.9;
 
     max-width:850px;
@@ -153,7 +153,7 @@ body{
 .platform-buttons a{
     text-decoration:none;
 
-    padding:13px 28px;
+    padding:12px 26px;
 
     border-radius:50px;
 
@@ -224,7 +224,7 @@ section{
 
 .section-title h2{
     font-family:'Cinzel', serif;
-    font-size:2.5rem;
+    font-size:2.4rem;
     margin-bottom:10px;
 }
 
@@ -277,13 +277,13 @@ section{
 }
 
 .content-card p{
-    margin-bottom:26px;
+    margin-bottom:24px;
 
     color:#e6e6e6;
 
-    font-size:1.04rem;
+    font-size:1rem;
 
-    line-height:2;
+    line-height:1.9;
 }
 
 .content-card p:last-child{
@@ -302,9 +302,11 @@ section{
     display:grid;
 
     grid-template-columns:
-    repeat(3, 1fr);
+    repeat(3, minmax(0, 1fr));
 
-    gap:24px;
+    gap:22px;
+
+    align-items:start;
 }
 
 /* PODCAST CARD */
@@ -319,7 +321,7 @@ section{
         rgba(9,16,27,0.96)
     );
 
-    border-radius:28px;
+    border-radius:24px;
 
     overflow:hidden;
 
@@ -328,15 +330,17 @@ section{
     transition:0.3s ease;
 
     box-shadow:
-    0 10px 35px rgba(0,0,0,0.35);
+    0 10px 30px rgba(0,0,0,0.32);
 }
 
 .episode-card:hover{
-    border-color:rgba(212,175,55,0.45);
+    border-color:rgba(212,175,55,0.4);
+
+    transform:translateY(-4px);
 
     box-shadow:
-    0 20px 45px rgba(0,0,0,0.45),
-    0 0 25px rgba(212,175,55,0.14);
+    0 18px 40px rgba(0,0,0,0.42),
+    0 0 18px rgba(212,175,55,0.12);
 }
 
 /* EPISODE IMAGE */
@@ -345,7 +349,7 @@ section{
     position:relative;
 
     width:100%;
-    height:220px;
+    height:170px;
 
     overflow:hidden;
 
@@ -358,9 +362,7 @@ section{
     width:100%;
     height:100%;
 
-    object-fit:contain;
-
-    background:#000;
+    object-fit:cover;
 
     transition:0.3s ease;
 }
@@ -374,10 +376,10 @@ section{
 .now-playing{
     position:absolute;
 
-    top:16px;
-    left:16px;
+    top:14px;
+    left:14px;
 
-    padding:7px 14px;
+    padding:6px 12px;
 
     border-radius:50px;
 
@@ -385,7 +387,7 @@ section{
 
     color:#d4af37;
 
-    font-size:0.78rem;
+    font-size:0.72rem;
     font-weight:700;
 
     letter-spacing:1px;
@@ -395,24 +397,71 @@ section{
     border:1px solid rgba(212,175,55,0.3);
 }
 
+/* PLAY BUTTON */
+
+.play-button{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    width:62px;
+    height:62px;
+
+    border-radius:50%;
+
+    background:rgba(7,16,29,0.84);
+
+    border:2px solid rgba(212,175,55,0.6);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d4af37;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+    z-index:10;
+
+    transition:0.3s ease;
+
+    backdrop-filter:blur(5px);
+}
+
+.play-button:hover{
+    transform:translate(-50%, -50%) scale(1.05);
+
+    background:#d4af37;
+
+    color:#07101d;
+
+    box-shadow:
+    0 0 20px rgba(212,175,55,0.45);
+}
+
 /* SOUND WAVE */
 
 .sound-wave{
     position:absolute;
 
-    right:22px;
-    bottom:22px;
+    right:18px;
+    bottom:18px;
 
     display:flex;
     align-items:flex-end;
 
-    gap:8px;
+    gap:7px;
 
     z-index:5;
 }
 
 .sound-wave span{
-    width:6px;
+    width:5px;
 
     background:#d4af37;
 
@@ -425,73 +474,28 @@ section{
 }
 
 .sound-wave span:nth-child(1){
-    height:12px;
+    height:10px;
     animation-delay:0s;
 }
 
 .sound-wave span:nth-child(2){
-    height:24px;
+    height:20px;
     animation-delay:0.15s;
 }
 
 .sound-wave span:nth-child(3){
-    height:16px;
+    height:14px;
     animation-delay:0.3s;
 }
 
 .sound-wave span:nth-child(4){
-    height:28px;
+    height:24px;
     animation-delay:0.45s;
 }
 
 .sound-wave span:nth-child(5){
-    height:18px;
+    height:16px;
     animation-delay:0.6s;
-}
-
-.play-button{
-    position:absolute;
-
-    top:50%;
-    left:50%;
-
-    transform:translate(-50%, -50%);
-
-    width:68px;
-    height:68px;
-
-    border-radius:50%;
-
-    background:rgba(7,16,29,0.82);
-
-    border:2px solid rgba(212,175,55,0.65);
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:#d4af37;
-
-    font-size:1.7rem;
-
-    cursor:pointer;
-
-    z-index:10;
-
-    transition:0.3s ease;
-
-    backdrop-filter:blur(5px);
-}
-
-.play-button:hover{
-    transform:translate(-50%, -50%) scale(1.06);
-
-    background:#d4af37;
-
-    color:#07101d;
-
-    box-shadow:
-    0 0 22px rgba(212,175,55,0.5);
 }
 
 audio{
@@ -530,25 +534,25 @@ audio{
 /* CARD CONTENT */
 
 .episode-content{
-    padding:26px;
+    padding:20px;
 }
 
 .episode-tag{
     display:inline-block;
 
-    margin-bottom:16px;
+    margin-bottom:14px;
 
-    padding:7px 14px;
+    padding:6px 12px;
 
     border-radius:50px;
 
     background:rgba(212,175,55,0.1);
 
-    border:1px solid rgba(212,175,55,0.24);
+    border:1px solid rgba(212,175,55,0.22);
 
     color:#d4af37;
 
-    font-size:0.76rem;
+    font-size:0.72rem;
     font-weight:700;
 
     letter-spacing:1px;
@@ -557,11 +561,11 @@ audio{
 }
 
 .episode-card h3{
-    font-size:1.45rem;
+    font-size:1.15rem;
 
-    line-height:1.4;
+    line-height:1.45;
 
-    margin-bottom:16px;
+    margin-bottom:12px;
 
     color:white;
 }
@@ -569,9 +573,11 @@ audio{
 .episode-card p{
     color:#d4d4d4;
 
-    line-height:1.85;
+    line-height:1.7;
 
-    margin-bottom:24px;
+    margin-bottom:18px;
+
+    font-size:0.94rem;
 }
 
 .episode-btn{
@@ -645,7 +651,7 @@ audio{
 
 .listen-box h2{
     font-family:'Cinzel', serif;
-    font-size:2.3rem;
+    font-size:2.2rem;
     margin-bottom:18px;
 }
 
@@ -704,7 +710,11 @@ footer h3{
 
 .episode-grid{
     grid-template-columns:
-    repeat(2, 1fr);
+    repeat(2, minmax(0, 1fr));
+}
+
+.episode-image{
+    height:190px;
 }
 
 }
@@ -730,6 +740,17 @@ footer h3{
 
 .episode-grid{
     grid-template-columns:1fr;
+}
+
+.episode-image{
+    height:220px;
+}
+
+.play-button{
+    width:58px;
+    height:58px;
+
+    font-size:1.3rem;
 }
 
 }
@@ -762,7 +783,7 @@ section{
 
 }
 
-    .designer-credit{
+.designer-credit{
     margin-top:24px;
 }
 
