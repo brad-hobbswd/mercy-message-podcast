@@ -35,22 +35,29 @@ body{
 
 .hero-header{
     position:relative;
-    min-height:100vh;
+    min-height:85vh;
     text-align:center;
+    overflow:hidden;
 }
 
 .banner-image{
     width:100%;
-    height:100vh;
+    height:85vh;
     object-fit:cover;
+    object-position:center;
     display:block;
-    filter:brightness(35%);
+    filter:brightness(60%);
+    transform:scale(1.03);
 }
 
 .banner-overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(7,16,29,0.95));
+    background:linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.15),
+        rgba(7,16,29,0.75)
+    );
     z-index:1;
 }
 
@@ -75,17 +82,19 @@ body{
 .nav-logo img{
     width:65px;
     border-radius:50%;
+    border:2px solid rgba(212,175,55,0.5);
 }
 
 .nav-logo h2{
     font-family:'Cinzel', serif;
     color:#d4af37;
-    font-size:1.4rem;
+    font-size:1.3rem;
+    letter-spacing:1px;
 }
 
 .nav-links{
     display:flex;
-    gap:30px;
+    gap:28px;
     list-style:none;
 }
 
@@ -102,42 +111,44 @@ body{
 
 .hero-content{
     position:absolute;
-    top:50%;
+    top:47%;
     left:50%;
     transform:translate(-50%, -50%);
     z-index:3;
     width:90%;
-    max-width:900px;
+    max-width:850px;
+    backdrop-filter:blur(2px);
 }
 
 .main-logo{
-    width:190px;
+    width:170px;
     border-radius:50%;
-    margin-bottom:25px;
-    border:5px solid #d4af37;
+    margin-bottom:20px;
+    border:4px solid #d4af37;
     box-shadow:0 0 35px rgba(212,175,55,0.5);
 }
 
 .hero-content h1{
     font-family:'Cinzel', serif;
-    font-size:4.5rem;
-    letter-spacing:4px;
-    margin-bottom:20px;
+    font-size:4rem;
+    letter-spacing:2px;
+    margin-bottom:15px;
+    line-height:1.1;
 }
 
 .hero-text{
-    font-size:1.25rem;
-    line-height:1.9;
-    max-width:750px;
+    font-size:1.15rem;
+    line-height:1.8;
+    max-width:720px;
     margin:auto;
-    color:#e5d7a4;
+    color:#f1e5bb;
 }
 
 .hero-buttons{
-    margin-top:40px;
+    margin-top:30px;
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:18px;
     flex-wrap:wrap;
 }
 
@@ -146,7 +157,7 @@ body{
 .episode-btn,
 .platform-buttons a{
     text-decoration:none;
-    padding:14px 30px;
+    padding:13px 28px;
     border-radius:50px;
     font-weight:700;
     transition:0.3s ease;
@@ -157,8 +168,11 @@ body{
     color:#07101d;
 }
 
-.primary-btn:hover{
+.primary-btn:hover,
+.episode-btn:hover,
+.platform-buttons a:hover{
     background:white;
+    box-shadow:0 0 20px rgba(212,175,55,0.5);
 }
 
 .secondary-btn{
@@ -172,22 +186,22 @@ body{
 }
 
 section{
-    padding:100px 8%;
+    padding:70px 7%;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:35px;
 }
 
 .section-title h2{
     font-family:'Cinzel', serif;
-    font-size:2.8rem;
-    margin-bottom:15px;
+    font-size:2.5rem;
+    margin-bottom:12px;
 }
 
 .gold-line{
-    width:120px;
+    width:100px;
     height:4px;
     background:#d4af37;
     margin:auto;
@@ -196,28 +210,28 @@ section{
 
 .content-card{
     background:#101b2d;
-    padding:45px;
+    padding:35px;
     border-radius:25px;
-    max-width:950px;
+    max-width:900px;
     margin:auto;
-    line-height:2;
-    font-size:1.05rem;
-    box-shadow:0 0 30px rgba(0,0,0,0.3);
+    line-height:1.9;
+    font-size:1rem;
+    box-shadow:0 0 30px rgba(0,0,0,0.25);
 }
 
 .content-card p{
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .episode-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:30px;
+    gap:25px;
 }
 
 .episode-card{
     background:#101b2d;
-    padding:35px;
+    padding:28px;
     border-radius:25px;
     text-align:center;
     transition:0.3s ease;
@@ -225,19 +239,19 @@ section{
 }
 
 .episode-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
     border-color:#d4af37;
 }
 
 .episode-card h3{
     color:#d4af37;
-    font-size:1.5rem;
-    margin-bottom:20px;
+    font-size:1.4rem;
+    margin-bottom:18px;
 }
 
 .episode-card p{
-    line-height:1.9;
-    margin-bottom:30px;
+    line-height:1.8;
+    margin-bottom:25px;
 }
 
 .episode-btn{
@@ -248,12 +262,12 @@ section{
 .scripture-container{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:25px;
+    gap:22px;
 }
 
 .scripture-box{
     background:#101b2d;
-    padding:35px;
+    padding:28px;
     border-radius:25px;
     text-align:center;
     border-left:5px solid #d4af37;
@@ -261,11 +275,11 @@ section{
 
 .scripture-box h3{
     color:#d4af37;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .scripture-box p{
-    line-height:1.9;
+    line-height:1.8;
 }
 
 .listen-section{
@@ -274,27 +288,27 @@ section{
 
 .listen-box{
     background:linear-gradient(135deg, #101b2d, #17263f);
-    padding:60px 30px;
+    padding:50px 30px;
     border-radius:30px;
-    max-width:900px;
+    max-width:850px;
     margin:auto;
 }
 
 .listen-box h2{
     font-family:'Cinzel', serif;
-    font-size:2.5rem;
-    margin-bottom:20px;
+    font-size:2.3rem;
+    margin-bottom:18px;
 }
 
 .listen-box p{
-    margin-bottom:35px;
+    margin-bottom:30px;
     line-height:1.8;
 }
 
 .platform-buttons{
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:18px;
     flex-wrap:wrap;
 }
 
@@ -310,14 +324,14 @@ section{
 footer{
     background:#040a14;
     text-align:center;
-    padding:60px 20px;
+    padding:50px 20px;
     border-top:1px solid rgba(212,175,55,0.2);
 }
 
 .footer-logo{
-    width:100px;
+    width:90px;
     border-radius:50%;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 footer h3{
@@ -327,20 +341,20 @@ footer h3{
 }
 
 footer p{
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .copyright{
     opacity:0.7;
     font-size:0.9rem;
-    margin-top:20px;
+    margin-top:18px;
 }
 
 @media(max-width:900px){
 
 .navbar{
     flex-direction:column;
-    gap:20px;
+    gap:18px;
 }
 
 .hero-content h1{
@@ -352,26 +366,42 @@ footer p{
 }
 
 .main-logo{
-    width:150px;
+    width:145px;
 }
 
 .section-title h2{
-    font-size:2.2rem;
+    font-size:2rem;
 }
 
 }
 
 @media(max-width:600px){
 
+.navbar{
+    padding:20px;
+}
+
 .nav-links{
-    gap:15px;
+    gap:14px;
     flex-wrap:wrap;
     justify-content:center;
 }
 
+.hero-header{
+    min-height:78vh;
+}
+
+.banner-image{
+    height:78vh;
+}
+
+.hero-content{
+    top:50%;
+}
+
 .hero-content h1{
-    font-size:2.2rem;
-    letter-spacing:2px;
+    font-size:2.1rem;
+    letter-spacing:1px;
 }
 
 .hero-buttons{
@@ -382,7 +412,7 @@ footer p{
 .content-card,
 .episode-card,
 .scripture-box{
-    padding:25px;
+    padding:24px;
 }
 
 }
@@ -398,7 +428,7 @@ footer p{
 <nav class="navbar">
 
 <div class="nav-logo">
-<img src="ABAA9F5D-3E04-4228-B71A-C976DA1F072E.png" alt="One God Podcast Logo">
+<img src="ABAA9F5D-3E04-4228-B71A-C976DA1F072E.png" alt="Joseph Bennett One God Podcast Logo">
 <h2>One God Podcast</h2>
 </div>
 
@@ -413,11 +443,11 @@ footer p{
 
 <div class="banner-overlay"></div>
 
-<img src="F9B2C3E6-2B67-4527-92AC-1DF951E6134A.png" alt="One God Podcast Banner" class="banner-image">
+<img src="F9B2C3E6-2B67-4527-92AC-1DF951E6134A.png" alt="One God Podcast Banner Image" class="banner-image">
 
 <div class="hero-content">
 
-<img src="ABAA9F5D-3E04-4228-B71A-C976DA1F072E.png" alt="Podcast Logo" class="main-logo">
+<img src="ABAA9F5D-3E04-4228-B71A-C976DA1F072E.png" alt="Joseph Bennett Podcast Main Logo" class="main-logo">
 
 <h1>ONE GOD PODCAST</h1>
 
@@ -581,7 +611,7 @@ Contact Ministry
 
 <footer>
 
-<img src="logo.png" alt="One God Podcast Logo" class="footer-logo">
+<img src="ABAA9F5D-3E04-4228-B71A-C976DA1F072E.png" alt="One God Podcast Footer Logo" class="footer-logo">
 
 <h3>One God Podcast</h3>
 
