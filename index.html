@@ -294,22 +294,18 @@ section{
 
     border:1px solid rgba(212,175,55,0.14);
 
-    transition:0.35s ease;
+    transition:0.3s ease;
 
     box-shadow:
     0 10px 35px rgba(0,0,0,0.35);
 }
 
 .episode-card:hover{
-    transform:
-    translateY(-10px)
-    scale(1.02);
-
     border-color:rgba(212,175,55,0.45);
 
     box-shadow:
-    0 28px 55px rgba(0,0,0,0.5),
-    0 0 35px rgba(212,175,55,0.18);
+    0 20px 45px rgba(0,0,0,0.45),
+    0 0 25px rgba(212,175,55,0.14);
 }
 
 /* EPISODE IMAGE */
@@ -332,14 +328,11 @@ section{
     object-fit:cover;
 
     transition:
-    transform 0.6s ease,
-    filter 0.6s ease;
+    filter 0.4s ease;
 }
 
 .episode-card:hover .episode-image img{
-    transform:scale(1.08);
-
-    filter:brightness(1.08);
+    filter:brightness(1.05);
 }
 
 /* NOW PLAYING */
@@ -373,8 +366,8 @@ section{
 .sound-wave{
     position:absolute;
 
-    right:34px;
-    bottom:36px;
+    right:92px;
+    bottom:64px;
 
     display:flex;
     align-items:flex-end;
