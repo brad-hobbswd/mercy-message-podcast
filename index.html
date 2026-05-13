@@ -1930,50 +1930,27 @@ function toggleAudio(audioId, element){
 
 document.body.classList.add('locked');
 
-const welcomeOverlay = document.getElementById('welcomeOverlay');
+const welcomeOverlay = document.getElementById(
+'welcomeOverlay'
+);
 
-const welcomeAudio = document.getElementById('welcomeAudio');
-
-/* FORCE AUDIO */
+/* FADE AFTER 8 SECONDS */
 
 window.addEventListener('load', function(){
 
-    const playPromise = welcomeAudio.play();
+    setTimeout(function(){
 
-    if(playPromise !== undefined){
+        welcomeOverlay.classList.add(
+            'hide-overlay'
+        );
 
-        playPromise.catch(function(){
+        document.body.classList.remove(
+            'locked'
+        );
 
-            document.addEventListener('click', startWelcomeAudioOnce);
-
-        });
-
-    }
+    }, 8000);
 
 });
-
-/* FALLBACK */
-
-function startWelcomeAudioOnce(){
-
-    welcomeAudio.play();
-
-    document.removeEventListener(
-        'click',
-        startWelcomeAudioOnce
-    );
-
-}
-
-/* REMOVE OVERLAY AFTER AUDIO */
-
-welcomeAudio.onended = function(){
-
-    welcomeOverlay.classList.add('hide-overlay');
-
-    document.body.classList.remove('locked');
-
-};
 
 </script>
 </body>
