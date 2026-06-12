@@ -1242,6 +1242,12 @@ body.locked{
 
     max-width:1200px;
 
+    width:min(90%,900px);
+
+    margin:0 auto;
+
+    text-align:center;
+
     display:grid;
 
     grid-template-columns:1fr 1fr;
@@ -1256,25 +1262,19 @@ body.locked{
 
 .welcome-image{
 
+    display:block;
+
     width:100%;
 
-    border-radius:30px;
+    max-width:850px;
 
-    opacity:.96;
+    height:auto;
 
-    border:1px solid rgba(243,212,138,.12);
+    margin:0 auto 3rem;
 
-    box-shadow:
+    border-radius:24px;
 
-    0 0 60px rgba(243,212,138,.08),
-
-    0 0 140px rgba(0,0,0,.60);
-
-    filter:
-
-    brightness(.92)
-
-    contrast(1.05);
+    box-shadow:0 20px 50px rgba(0,0,0,.55);
 
 }
 
@@ -1286,7 +1286,7 @@ body.locked{
 
 .welcome-logo{
 
-    width:100px;
+    width:90px;
 
     border-radius:50%;
 
@@ -1304,7 +1304,7 @@ body.locked{
 
     font-family:'Cinzel',serif;
 
-    font-size:3.3rem;
+    font-size:clamp(2rem,4vw,3.5rem);
 
     color:#ffffff;
 
@@ -1374,11 +1374,11 @@ body.locked{
 
     color:var(--text-soft);
 
-    line-height:1.9;
+    line-height:1.8;
 
-    max-width:540px;
+    max-width:700px;
 
-    margin:0 auto 34px auto;
+    margin:2rem auto;
 
 }
 
@@ -1519,6 +1519,14 @@ body.locked{
     font-size:2rem;
 
 }
+
+    .welcome-image{
+
+        width:88%;
+        max-width:650px;
+        margin:0 auto 2rem;
+
+    }
 
 }
 
