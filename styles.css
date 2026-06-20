@@ -1238,11 +1238,7 @@ body.locked{
 
     position:relative;
 
-    width:100%;
-
-    max-width:1200px;
-
-    width:min(90%,900px);
+    width:min(92%,1100px);
 
     margin:0 auto;
 
@@ -1497,37 +1493,22 @@ body.locked{
 }
 
 }
-
 @media(max-width:900px){
-
 .navbar{
-
     width:94%;
-
     padding:18px;
-
 }
-
 .hero-content{
-
     width:94%;
-
 }
-
 .section-title h2{
-
     font-size:2rem;
-
 }
-
-    .welcome-image{
-
-        width:88%;
-        max-width:650px;
-        margin:0 auto 2rem;
-
-    }
-
+.welcome-image{
+    width:88%;
+    max-width:650px;
+    margin:0 auto 2rem;
+}
 }
 
 @media(max-width:700px){
@@ -1597,33 +1578,29 @@ section{
 }
 
 #welcomeOverlay{
-
-    padding:30px 18px;
-
+    padding:20px;
 }
-
-.welcome-content h1{
-
-    font-size:2rem;
-
-}
-
-.welcome-scripture{
-
-    font-size:1rem;
-
-}
-
-.welcome-message{
-
-    font-size:.95rem;
-
-}
-
 .welcome-logo{
-
+    width:72px;
+}
+.welcome-content h1{
+    font-size:1.8rem;
+}
+.welcome-scripture{
+    font-size:.95rem;
+}
+.welcome-message{
+    font-size:.9rem;
+    line-height:1.6;
+}
+.welcome-line{
     width:80px;
-
+}
+.entering-text{
+    font-size:.65rem;
+}
+.playing-text{
+    font-size:.75rem;
 }
 
 }
