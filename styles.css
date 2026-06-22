@@ -518,7 +518,7 @@ section{
     grid-template-columns:
     repeat(3, minmax(0,1fr));
 
-    gap:22px;
+    gap:30px;
 
 }
 
@@ -557,6 +557,10 @@ section{
     0 12px 35px rgba(0,0,0,.45),
 
     0 0 20px rgba(243,212,138,.03);
+    
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -584,13 +588,9 @@ section{
 
     width:100%;
 
-    aspect-ratio:2/3;
+    min-height:500px;
 
-    overflow:hidden;
-
-    background:#050403;
-
-    cursor:pointer;
+    background:#000;
 
 }
 
@@ -600,11 +600,7 @@ section{
 
     height:100%;
 
-    object-fit:cover;
-
-    display:block;
-
-    transition:.4s ease;
+    object-fit:contain;
 
 }
 
@@ -1452,7 +1448,7 @@ body.locked{
 
 .episode-image{
 
-    height:210px;
+    aspect-ratio:2/3;
 
 }
 
@@ -1511,7 +1507,7 @@ body.locked{
 
 .episode-image{
 
-    height:240px;
+    min-height:420px;
 
 }
 
