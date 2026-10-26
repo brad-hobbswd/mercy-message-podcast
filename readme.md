@@ -1,127 +1,29 @@
-# Mercy Message Podcast
+# The Mercy Message Podcast
 
-> **Mercy changes everything.**
->
-> A Christ centered podcast proclaiming the mercy, grace, truth, and saving power of Jesus Christ through biblical teaching, devotionals, testimony, and encouraging conversations.
+A Christian podcast project for sharing messages of mercy, grace, faith, restoration, and encouragement through Jesus Christ.
 
----
+## Live Website
+https://brad-hobbswd.github.io/mercy-message-podcast/
 
-## About
+## Project Overview
+Podcast introduction, episode or message listings, host information, and ways to listen or connect, where available in the site.
 
-**Mercy Message Podcast** exists to remind every listener that no life is beyond the reach of the mercy of Jesus.
+The homepage currently uses the title **The Mercy Message Podcast**. The Mercy Message Podcast featuring host Bradley Hobbs and biblical teacher Joseph Bennett. Apostolic teaching, Scripture centered conversations, and encouragement rooted in the Word of God.
 
-Every episode points hearts toward hope, restoration, forgiveness, and the transforming power of the Word of God. Whether you are walking through failure, searching for purpose, or growing in faith, this podcast invites you to encounter the mercy that makes all things new.
-
----
-
-## Topics
-
-* Biblical Teaching
-* The Mercy of Jesus
-* Grace and Redemption
-* Faith and Spiritual Growth
-* Christian Living
-* Testimonies of Restoration
-* Encouragement for Everyday Life
-* Scripture Based Devotionals
-
----
-
-## Listen Online
-
-### 🌐 Live Website
-
-**https://brad-hobbswd.github.io/mercy-message-podcast**
-
----
-
-## Mission
-
-The Mercy Message Podcast is dedicated to sharing timeless biblical truth with clarity, compassion, and conviction.
-
-Every message is designed to:
-
-* Encourage the discouraged
-* Strengthen believers
-* Reach those searching for hope
-* Point every listener to Jesus Christ
-* Demonstrate that mercy is greater than shame and grace is greater than failure
-
----
-
-## Featured Series
-
-* Walking in Mercy
-* Grace for the Broken
-* The Power of Forgiveness
-* Living by Faith
-* Identity in Christ
-* Hope Beyond Yesterday
-
----
+## Website Pages
+- `copyright.html`
+- `images/`
+- `privacy.html`
+- `terms.html`
 
 ## Technology
+Static website published with GitHub Pages. The repository contains HTML pages and supporting CSS, JavaScript, and visual assets where included.
 
-Built with:
+## Copyright and Permissions
+Copyright © 2026 Bradley Hobbs. All rights reserved.
 
-* HTML5
-* CSS3
-* JavaScript
-* Responsive Design
-* GitHub Pages
+Original writing, teaching materials, website copy, graphics, visual design, and original source code are protected by copyright. Please obtain written permission before reproducing, republishing, modifying, redistributing, or commercially using these materials, except where applicable law permits otherwise. Third-party materials remain subject to their owners' terms.
 
----
-
-## Repository Structure
-
-```
-/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── images/
-│   └── audio/
-├── favicon.ico
-└── README.md
-```
-
----
-
-## Local Development
-
-Clone the repository:
-
-```bash
-git clone https://github.com/brad-hobbswd/mercy-message-podcast.git
-```
-
-Open `index.html` in your browser or serve the project with your preferred local development server.
-
----
-
-## Vision
-
-Mercy is more than a moment.
-
-Mercy restores the wounded, welcomes the forgotten, reaches the broken, and reveals the heart of Jesus. Every episode exists to proclaim that no past is too dark and no future is beyond God's redeeming love.
-
-> **"Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need."**
->
-> **Hebrews 4:16**
-
----
-
-## Connect
-
-**Website**
-
-https://brad-hobbswd.github.io/mercy-message-podcast
-
-Explore episodes, devotional resources, and additional biblical content designed to strengthen your walk with Jesus.
-
----
-
-### Soli Deo Gloria
-
-**Mercy triumphs over judgment, hope rises over despair, and Jesus remains the answer.**
+## Search Engine Files
+- [Sitemap](sitemap.xml)
+- [robots.txt](robots.txt)
